@@ -4,71 +4,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/profile.css">
     <title>Profile</title>
 </head>
 
 <body>
-    <table border="0" width="73.5%">
-        <tbody>
-            <tr valign="top">
-                <!-- First column -->
-                <td>
-                    <ul>
-                        <li><a href="../navigation/accountNav.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="../navigation/courseNav.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <!-- Second column -->
-                <td>
-                    <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="./index.html">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">ePortfolios</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Qwickly Course Tools</a></li>
-                        <li><a href="#">Global Announcements</a></li>
-                    </ul>
-                </td>
-                <!-- Third column -->
-                <td>
-                    <div id="profile-header">
-                        Yilei Bao's Profile
+    <div class="d-flex flex-row" id="wrapper">
+        <div id="sidebar-wrapper">
+            <!-- Sidebar reference: https://getbootstrap.com/docs/5.0/examples/sidebars/ -->
+            <!-- Sticking sidebar to left of screen: https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/dist/index.html -->
+            <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-white bg-dark m-0"
+                id="kanbas-navbar">
+                <a href="./kanbasNav.html" class="d-flex align-items-center mb-md-0 text-white text-decoration-none">
+                    <img width="85" height="85" src="../images/NU_RGB_Notched-N_motto_RW.png"
+                        alt="Northeastern University Logo">
+                </a>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link  active" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-circle-user fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Account</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-gauge-high fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Dashboard</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./courseNav.html" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-book fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Courses</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-calendar-days fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Calendar</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-inbox fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Inbox</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-clock fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">History</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-desktop fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Studio</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-right-from-bracket fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Commons</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-circle-question fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Help</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+        <div class="page-content-wrapper">
+            <span id="account-page-header" class="d-flex flex-row align-items-center">
+                <h4>
+                    <i class="fa-solid fa-bars fa-1x me-4" id="account-page-header-icon"></i>
+                    Yilei (Jerry) Bao's Profile
+                </h4>
+            </span>
+            <hr>
+            <div class="d-flex flex-row">
+                <div>
+                    <div class="d-flex flex-column" id="account-sidebar">
+                        <ul>
+                            <li><a href="#">Notifications</a></li>
+                            <li class="selected"><a href=" ../profile/index.html" ">Profile</a></li>
+                            <li><a href=" #">Files</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">ePortfolios</a></li>
+                            <li><a href="#">Shared Content</a></li>
+                            <li><a href="#">The Hub</a></li>
+                            <li><a href="#">Qwickly Course Tools</a></li>
+                            <li><a href="#">Global Announcements</a></li>
+                        </ul>
                     </div>
-                    <hr>
+                </div>
+                <div class="d-flex flex-column ms-4" id="profile-content">
                     <form action="./edit.html" id="profile-form">
                         <div id="header-container">
-                            <h1>Yilei Bao</h1>
-                            <button>Edit Profile</button>
+                            <div class="d-flex flex-row">
+                                <div class="me-auto">
+                                    <span class="fa-stack fa-5x mb-3" id="profile-avatar">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x" aria-hidden="true"></i>
+                                    </span>
+                                    <h2 class="mb-5" id="username">Yilei (Jerry) Bao</h2>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary override-btn">
+                                        <i class="fa-solid fa-pencil"></i>
+                                        Edit Profile
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h2>Contact</h2>
-                            No registered services, you can add some on the <a href="#">settings</a> page.
+                        <div class="mb-4 profile-section">
+                            <h3>Contact</h2>
+                                No registered services, you can add some on the <a href="#">settings</a> page.
                         </div>
-                        <div>
-                            <h2>Biography</h2>
-                            Student, en route to Software Engineer, tech gadgets enthusiast, tennis lover, photographer.
+                        <div class="mb-4 profile-section">
+                            <h3>Biography</h3>
+                            Student, en route to software engineer, tech gadgets enthusiast, tennis lover, photographer.
                         </div>
-                        <div>
-                            <h2>Links</h2>
-                            <a href="https://www.instagram.com/jerrysrandomsnaps/">Instagram</a>
+                        <div class="mb-4 profile-section">
+                            <h3>Links</h3>
+                            <ul id="links-list">
+                                <li>
+                                    <a href="https://www.instagram.com/jerrysrandomsnaps/">
+                                        <i class="fa-solid fa-link"></i>
+                                        Instagram
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@WebDevTV/videos">
+                                        <i class="fa-solid fa-link"></i>
+                                        YouTube
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                </td>
-            </tr>
-        </tbody>
-    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d86fba7c7b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
