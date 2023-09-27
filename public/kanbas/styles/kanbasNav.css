@@ -1,0 +1,41 @@
+#kanbas-navbar {
+    width: 85px;
+    min-height: 100vh;
+}
+
+.nav-pills a div div {
+    font-size: 0.9em !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #ffffff;
+    color: #E50000;
+}
+
+.nav-pills .nav-link {
+    color: #ffffff;
+}
+
+.nav-pills .nav-link span {
+    color: #E50000;
+}
+
+.nav-pills .nav-link.active span {
+    color: grey;
+}
+
+.nav-pills .nav-link {
+    width: auto;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.nav-pills .nav-link div span {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.nav-pills .nav-link div div {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
