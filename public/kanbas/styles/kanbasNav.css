@@ -1,23 +1,31 @@
 #kanbas-navbar {
-    width: 85px;
+    width: 85px !important;
     min-height: 100vh;
 }
 
-.nav-pills a div div {
+#kanbas-navbar ul {
+    max-width: 100% !important;
+}
+
+#kanbas-navbar ul li {
+    max-width: 100% !important;
+}
+
+.kanbas-navbar-item-text {
     font-size: 0.9em !important;
 }
 
-.nav-pills .nav-link.active {
-    min-width: 100vw;
-    background-color: #ffffff;
-    color: #E50000;
-}
-
-.nav-pills .nav-link {
+.nav-link {
     color: #ffffff;
+    max-width: 100% !important;
 }
 
 .nav-pills .nav-link span {
+    color: #E50000;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #ffffff;
     color: #E50000;
 }
 
@@ -26,15 +34,17 @@
 }
 
 .nav-pills .nav-link {
-    width: auto;
+    width: 100vw;
     border-radius: 0;
     padding: 5px;
 }
 
-.nav-pills .nav-link div span {
-    margin-block: 5px;
+.nav-pills .nav-link div span,
+.nav-pills .nav-link div div {
+    margin-block: 3px;
 }
 
-.nav-pills .nav-link div div {
-    margin-block: 5px;
+.page-content-wrapper {
+    min-width: 100vw;
+    margin: 25px;
 }
