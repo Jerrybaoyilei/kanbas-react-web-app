@@ -27,15 +27,13 @@
 .nav-pills .nav-link {
     width: auto;
     border-radius: 0;
-    padding: 10px;
+    padding: 5px;
 }
 
 .nav-pills .nav-link div span {
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-block: 5px;
 }
 
 .nav-pills .nav-link div div {
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-block: 5px;
 }

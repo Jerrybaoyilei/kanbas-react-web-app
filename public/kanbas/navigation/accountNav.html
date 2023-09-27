@@ -5,32 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanbas - Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/accountNav.css">
 </head>
 
 <body>
-    <table border="0" width="25.3%">
-        <tbody>
-            <tr valign="top">
-                <!-- First column -->
-                <td>
-                    <ul>
-                        <li><a href="./accountNav.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="./courseNav.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <!-- Second column -->
-                <td>
+    <div class="d-flex flex-row" id="wrapper">
+        <div class="border-end" id="sidebar-wrapper">
+            <!-- Sidebar reference: https://getbootstrap.com/docs/5.0/examples/sidebars/ -->
+            <!-- Sticking sidebar to left of screen: https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/dist/index.html -->
+            <div class="d-flex flex-column align-items-center flex-grow-1 p-1 text-white bg-dark" id="kanbas-navbar">
+                <a href="./kanbasNav.html"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <img width="75" height="75" src="../images/NU_RGB_Notched-N_motto_RW.png"
+                        alt="Northeastern University Logo">
+                </a>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="./accountNav.html" class="nav-link  active" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-circle-user fa-2x"></i>
+                                </span>
+                                <div class="">Account</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-gauge-high fa-2x"></i>
+                                </span>
+                                <div>Dashboard</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./courseNav.html" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-book fa-2x"></i>
+                                </span>
+                                <div>Courses</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-calendar-days fa-2x"></i>
+                                </span>
+                                <div>Calendar</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-inbox fa-2x"></i>
+                                </span>
+                                <div>Inbox</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-clock fa-2x"></i>
+                                </span>
+                                <div>History</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-desktop fa-2x"></i>
+                                </span>
+                                <div>Studio</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-right-from-bracket fa-2x"></i>
+                                </span>
+                                <div>Commons</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-circle-question fa-2x"></i>
+                                </span>
+                                <div>Help</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+        <div class="page-content-wrapper">
+            <span id="account-page-header" class="d-flex flex-row align-items-center">
+                <h4>
+                    <i class="fa-solid fa-bars fa-1x me-4" id="account-page-header-icon"></i>
+                    Yilei (Jerry) Bao's Profile
+                </h4>
+            </span>
+            <hr>
+            <div>
+                <div class="d-flex flex-column" id="account-sidebar">
                     <ul>
                         <li><a href="#">Notifications</a></li>
-                        <li><a href="../profile/index.html">Profile</a></li>
-                        <li><a href="#">Files</a></li>
+                        <li class="selected"><a href=" ../profile/index.html" ">Profile</a></li>
+                        <li><a href=" #">Files</a></li>
                         <li><a href="#">Settings</a></li>
                         <li><a href="#">ePortfolios</a></li>
                         <li><a href="#">Shared Content</a></li>
@@ -38,10 +137,16 @@
                         <li><a href="#">Qwickly Course Tools</a></li>
                         <li><a href="#">Global Announcements</a></li>
                     </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d86fba7c7b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
