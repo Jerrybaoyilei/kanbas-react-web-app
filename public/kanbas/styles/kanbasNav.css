@@ -8,6 +8,7 @@
 }
 
 .nav-pills .nav-link.active {
+    min-width: 100vw;
     background-color: #ffffff;
     color: #E50000;
 }
