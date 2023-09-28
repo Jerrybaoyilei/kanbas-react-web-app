@@ -1,6 +1,6 @@
 #kanbas-navbar {
     width: 85px !important;
-    min-height: 100vh;
+    min-height: max(100vh, 100%);
 }
 
 #kanbas-navbar ul {
@@ -111,6 +111,12 @@
 .override-btn {
     background-color: rgb(233, 233, 233);
     border: 1px solid rgb(196, 195, 195);
+    color: black;
+}
+
+.btn-primary.override-btn:active {
+    background-color: grey;
+    border: 1px solid grey;
     color: black;
 }
 

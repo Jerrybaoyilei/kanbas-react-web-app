@@ -1,6 +1,6 @@
 #kanbas-navbar {
     width: 85px !important;
-    min-height: 100vh;
+    min-height: max(100vh, 100%);
 }
 
 #kanbas-navbar ul {
