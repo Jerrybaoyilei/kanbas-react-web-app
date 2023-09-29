@@ -29,7 +29,7 @@
     color: #E50000;
 }
 
-.nav-pills .nav-link.active span {
+#account-icon {
     color: grey;
 }
 
