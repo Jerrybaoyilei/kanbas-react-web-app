@@ -15,9 +15,14 @@
     font-size: 0.9em !important;
 }
 
-.nav-link {
+.nav-link,
+.nav-link:visited {
     color: #ffffff;
     max-width: 100% !important;
+}
+
+.nav-link:hover {
+    color: #E50000;
 }
 
 .nav-pills .nav-link span {

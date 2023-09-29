@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/profile.css">
-    <title>Profile</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <title>Dashboard</title>
 </head>
 
 <body>
-    <div class="d-flex flex-row" id="wrapper">
+    <div class="d-flex" id="wrapper">
         <div id="sidebar-wrapper">
             <!-- Sidebar reference: https://getbootstrap.com/docs/5.0/examples/sidebars/ -->
             <!-- Sticking sidebar to left of screen: https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/dist/index.html -->
-            <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-white bg-dark m-0"
+            <div class="d-flex flex-column align-items-center justify-content-center flex-shrink-1 text-white bg-dark m-0"
                 id="kanbas-navbar">
                 <a href="./kanbasNav.html" class="d-flex align-items-center mb-md-0 text-white text-decoration-none">
                     <img width="85" height="85" src="../images/NU_RGB_Notched-N_motto_RW.png"
@@ -23,7 +23,7 @@
                 </a>
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link active" aria-current="Navigate to account page">
+                        <a href="../profile/index.html" class="nav-link" aria-current="Navigate to account page">
                             <div class="d-flex flex-column align-items-center">
                                 <span id="account-icon">
                                     <i class="fa-regular fa-circle-user fa-2x"></i>
@@ -33,7 +33,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="../dashboard/index.html" class="nav-link" aria-current="Navigate to account page">
+                        <a href="./index.html" class="nav-link active" aria-current="Navigate to account page">
                             <div class="d-flex flex-column align-items-center">
                                 <span>
                                     <i class="fa-solid fa-gauge-high fa-2x"></i>
@@ -131,7 +131,7 @@
                             <ul>
                                 <li><a href="#">Notifications</a></li>
                                 <li class="selected"><a href=" ../profile/index.html" ">Profile</a></li>
-                                <li><a href=" #">Files</a></li>
+                                            <li><a href=" #">Files</a></li>
                                 <li><a href="#">Settings</a></li>
                                 <li><a href="#">ePortfolios</a></li>
                                 <li><a href="#">Shared Content</a></li>
@@ -142,56 +142,119 @@
                         </div>
                     </div>
                     <div class="d-flex flex-column ms-4" id="profile-content">
-                        <div id="header-container">
-                            <div class="me-auto">
-                                <span class="fa-stack fa-3x mb-3" id="profile-avatar">
+                        <form action="./index.html" id="profile-form">
+                            <div id="header-container">
+                                <span class="fa-stack fa-3x mb-3 me-auto" id="profile-avatar">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-user fa-stack-1x" aria-hidden="true"></i>
                                 </span>
                                 <div class="float-end">
-                                    <a href="./edit.html" class="btn btn-primary override-btn">
+                                    <a href="./index.html" class="btn btn-primary override-btn">
                                         <i class="fa-solid fa-pencil"></i>
-                                        Edit Profile
+                                        Cancel Editing
                                     </a>
                                 </div>
-                                <h2 class="mb-5" id="username">Yilei (Jerry) Bao</h2>
                             </div>
+                            <div class="col-9 mb-3" id="profile-name-container">
+                                <label for="profile-name" class="form-label">
+                                    <span class="profile-label">Name:*</span>
+                                </label>
+                                <input type="text" class="form-control" id="profile-name" value="Yilei (Jerry) Bao">
+                            </div>
+                            <div class="col-6 mb-3" id="profile-pronoun-container">
+                                <label for="profile-pronouns" class="form-label">
+                                    <span class="profile-label">Pronouns:</span>
+                                </label>
+                                <select name="pronoun" id="profile-pronouns" class="form-select">
+                                    <option value="NONE" selected>None</option>
+                                    <option value="HE-HIM-HIS">He/Him/His</option>
+                                    <option value="SHE-HER-HERS">She/Her/Hers</option>
+                                    <option value="THEY-THEM-THEIRS">They/Them/Theirs</option>
+                                </select>
+                            </div>
+                            <div class="col-9 mb-3 mb-5" id="profile-title-container">
+                                <label for="profile-title" class="form-label">
+                                    <span class="profile-label">Title:</span>
+                                </label>
+                                <input type="text" class="form-control" id="profile-title">
+                            </div>
+                            <div class="mb-4 profile-section" id="profile-contact-container">
+                                <h3>Contact</h2>
+                                    No registered services, you can add some on the <a href="#"
+                                        id="settings-link">settings</a> page.
+                            </div>
+                            <div class="col-9 mb-4" id="profile-biography-container">
+                                <label for="profile-biography" class="form-label">
+                                    <h3>Biography</h3>
+                                </label>
+                                <textarea name="biography" id="profile-biography" cols="30" rows="10"
+                                    class="form-control">Student, en route to software engineer, tech gadgets enthusiast, tennis lover, photographer.
+                                            </textarea>
+                            </div>
+                            <div class="mb-4 profile-section" id="profile-links-container">
+                                <h3>Links</h3>
+                                <div class="row mb-1 align-items-center">
+                                    <div class="d-flex col-5 justify-content-center">
+                                        <span class="profile-label">Title</span>
+                                    </div>
+                                    <div class="col-1">
 
-                        </div>
+                                    </div>
+                                    <div class="d-flex col-5 justify-content-center">
+                                        <span class="profile-label">URL</span>
+                                    </div>
+                                    <div class="col-1">
 
-                        <div class="mb-4 profile-section">
-                            <h3>Contact</h2>
-                                No registered services, you can add some on the <a href="#">settings</a> page.
-                        </div>
-                        <div class="mb-4 profile-section">
-                            <h3>Biography</h3>
-                            Student, en route to software engineer, tech gadgets enthusiast, tennis lover, photographer.
-                        </div>
-                        <div class="mb-4 profile-section">
-                            <h3>Links</h3>
-                            <ul id="links-list">
-                                <li>
-                                    <a href="https://www.instagram.com/jerrysrandomsnaps/">
-                                        <i class="fa-solid fa-link"></i>
-                                        Instagram
-                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/@WebDevTV/videos">
-                                        <i class="fa-solid fa-link"></i>
-                                        YouTube
-                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-1 align-items-center">
+                                    <div class="col-5">
+                                        <input type="text" class="form-control" value="Instagram">
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" class="form-control"
+                                            value="https://www.instagram.com/jerrysrandomsnaps/">
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </div>
+                                <div class="row mb-1 align-items-center">
+                                    <div class="col-5">
+                                        <input type="text" class="form-control" value="YouTube">
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" class="form-control"
+                                            value="https://www.youtube.com/@WebDevTV/videos">
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-5">
+                                        <a href="#" class="btn btn-primary override-btn" id="button-add-link">Add
+                                            another link</a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="d-flex flex-row justify-content-end">
+                                <a href="./index.html" class="btn btn-primary override-btn me-3">Cancel</a>
+                                <button class="btn btn-primary btn-red">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
