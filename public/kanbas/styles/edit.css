@@ -34,6 +34,10 @@
     color: #E50000;
 }
 
+#account-page-header h2 {
+    font-weight: 300;
+}
+
 #account-icon {
     color: grey;
 }

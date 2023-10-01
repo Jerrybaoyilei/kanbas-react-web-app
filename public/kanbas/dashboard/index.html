@@ -116,140 +116,224 @@
                 <hr>
             </div>
         </div>
-        <div class="page-content-wrapper">
+        <div class="page-content-wrapper container-fluid">
+            <span id="page-header">
+                <h2>
+                    Dashboard
+                </h2>
+            </span>
+            <hr />
             <div class="container-fluid">
-                <span id="account-page-header" class="d-flex flex-row align-items-center">
+                <span id="page-subheader">
                     <h4>
-                        <i class="fa-solid fa-bars fa-1x me-4" id="account-page-header-icon"></i>
-                        Yilei (Jerry) Bao's Profile
+                        Published Courses (7)
                     </h4>
                 </span>
                 <hr>
-                <div class="d-flex flex-row">
-                    <div>
-                        <div class="d-flex flex-column" id="account-sidebar">
-                            <ul>
-                                <li><a href="#">Notifications</a></li>
-                                <li class="selected"><a href=" ../profile/index.html" ">Profile</a></li>
-                                            <li><a href=" #">Files</a></li>
-                                <li><a href="#">Settings</a></li>
-                                <li><a href="#">ePortfolios</a></li>
-                                <li><a href="#">Shared Content</a></li>
-                                <li><a href="#">The Hub</a></li>
-                                <li><a href="#">Qwickly Course Tools</a></li>
-                                <li><a href="#">Global Announcements</a></li>
-                            </ul>
+                <div class="d-flex flex-row flex-wrap row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-start"
+                    id="cards-container">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-img-top course-solid-color d-flex flex-row">
+                                <img src="" alt="">
+                                <button type="button"
+                                    class="btn position-absolute top-0 end-0 right-0 m-2 override-card-img-button">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <a href="#" class="mb-2 card-link">
+                                    <div class="card-header-content-container">
+                                        <h6 class="card-title ellipsis">
+                                            <span class="card-title-text">
+                                                CS 4550 12631 Web Development
+                                            </span>
+                                        </h6>
+                                        <h5 class="card-subtitle mb-2 text-muted">CS4550.12631.202410</h5>
+                                        <p class="card-text ellipsis">
+                                            202410_1 Fall 2023 Semester Full Term Grad
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="#" class="course-card-icon">
+                                    <i class="fa-regular fa-note-sticky"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-column ms-4" id="profile-content">
-                        <form action="./index.html" id="profile-form">
-                            <div id="header-container">
-                                <span class="fa-stack fa-3x mb-3 me-auto" id="profile-avatar">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-user fa-stack-1x" aria-hidden="true"></i>
-                                </span>
-                                <div class="float-end">
-                                    <a href="./index.html" class="btn btn-primary override-btn">
-                                        <i class="fa-solid fa-pencil"></i>
-                                        Cancel Editing
-                                    </a>
-                                </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-img-top course-solid-color d-flex flex-row">
+                                <img src="" alt="">
+                                <button type="button"
+                                    class="btn position-absolute top-0 end-0 right-0 m-2 override-card-img-button">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
                             </div>
-                            <div class="col-9 mb-3" id="profile-name-container">
-                                <label for="profile-name" class="form-label">
-                                    <span class="profile-label">Name:*</span>
-                                </label>
-                                <input type="text" class="form-control" id="profile-name" value="Yilei (Jerry) Bao">
+                            <div class="card-body d-flex flex-column">
+                                <a href="#" class="mb-2 card-link">
+                                    <div class="card-header-content-container">
+                                        <h6 class="card-title ellipsis">
+                                            <span class="card-title-text">
+                                                CS 4550 12631 Web Development
+                                            </span>
+                                        </h6>
+                                        <h5 class="card-subtitle mb-2 text-muted">CS4550.12631.202410</h5>
+                                        <p class="card-text ellipsis">
+                                            202410_1 Fall 2023 Semester Full Term Grad
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="#" class="course-card-icon">
+                                    <i class="fa-regular fa-note-sticky"></i>
+                                </a>
                             </div>
-                            <div class="col-6 mb-3" id="profile-pronoun-container">
-                                <label for="profile-pronouns" class="form-label">
-                                    <span class="profile-label">Pronouns:</span>
-                                </label>
-                                <select name="pronoun" id="profile-pronouns" class="form-select">
-                                    <option value="NONE" selected>None</option>
-                                    <option value="HE-HIM-HIS">He/Him/His</option>
-                                    <option value="SHE-HER-HERS">She/Her/Hers</option>
-                                    <option value="THEY-THEM-THEIRS">They/Them/Theirs</option>
-                                </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-img-top course-solid-color d-flex flex-row">
+                                <img src="" alt="">
+                                <button type="button"
+                                    class="btn position-absolute top-0 end-0 right-0 m-2 override-card-img-button">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
                             </div>
-                            <div class="col-9 mb-3 mb-5" id="profile-title-container">
-                                <label for="profile-title" class="form-label">
-                                    <span class="profile-label">Title:</span>
-                                </label>
-                                <input type="text" class="form-control" id="profile-title">
+                            <div class="card-body d-flex flex-column">
+                                <a href="#" class="mb-2 card-link">
+                                    <div class="card-header-content-container">
+                                        <h6 class="card-title ellipsis">
+                                            <span class="card-title-text">
+                                                CS 4550 12631 Web Development
+                                            </span>
+                                        </h6>
+                                        <h5 class="card-subtitle mb-2 text-muted">CS4550.12631.202410</h5>
+                                        <p class="card-text ellipsis">
+                                            202410_1 Fall 2023 Semester Full Term Grad
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="#" class="course-card-icon">
+                                    <i class="fa-regular fa-note-sticky"></i>
+                                </a>
                             </div>
-                            <div class="mb-4 profile-section" id="profile-contact-container">
-                                <h3>Contact</h2>
-                                    No registered services, you can add some on the <a href="#"
-                                        id="settings-link">settings</a> page.
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-img-top course-solid-color d-flex flex-row">
+                                <img src="" alt="">
+                                <button type="button"
+                                    class="btn position-absolute top-0 end-0 right-0 m-2 override-card-img-button">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
                             </div>
-                            <div class="col-9 mb-4" id="profile-biography-container">
-                                <label for="profile-biography" class="form-label">
-                                    <h3>Biography</h3>
-                                </label>
-                                <textarea name="biography" id="profile-biography" cols="30" rows="10"
-                                    class="form-control">Student, en route to software engineer, tech gadgets enthusiast, tennis lover, photographer.
-                                            </textarea>
+                            <div class="card-body d-flex flex-column">
+                                <a href="#" class="mb-2 card-link">
+                                    <div class="card-header-content-container">
+                                        <h6 class="card-title ellipsis">
+                                            <span class="card-title-text">
+                                                CS 4550 12631 Web Development
+                                            </span>
+                                        </h6>
+                                        <h5 class="card-subtitle mb-2 text-muted">CS4550.12631.202410</h5>
+                                        <p class="card-text ellipsis">
+                                            202410_1 Fall 2023 Semester Full Term Grad
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="#" class="course-card-icon">
+                                    <i class="fa-regular fa-note-sticky"></i>
+                                </a>
                             </div>
-                            <div class="mb-4 profile-section" id="profile-links-container">
-                                <h3>Links</h3>
-                                <div class="row mb-1 align-items-center">
-                                    <div class="d-flex col-5 justify-content-center">
-                                        <span class="profile-label">Title</span>
-                                    </div>
-                                    <div class="col-1">
-
-                                    </div>
-                                    <div class="d-flex col-5 justify-content-center">
-                                        <span class="profile-label">URL</span>
-                                    </div>
-                                    <div class="col-1">
-
-                                    </div>
-                                </div>
-                                <div class="row mb-1 align-items-center">
-                                    <div class="col-5">
-                                        <input type="text" class="form-control" value="Instagram">
-                                    </div>
-                                    <div class="col-1">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                    <div class="col-5">
-                                        <input type="text" class="form-control"
-                                            value="https://www.instagram.com/jerrysrandomsnaps/">
-                                    </div>
-                                    <div class="col-1">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </div>
-                                </div>
-                                <div class="row mb-1 align-items-center">
-                                    <div class="col-5">
-                                        <input type="text" class="form-control" value="YouTube">
-                                    </div>
-                                    <div class="col-1">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                    <div class="col-5">
-                                        <input type="text" class="form-control"
-                                            value="https://www.youtube.com/@WebDevTV/videos">
-                                    </div>
-                                    <div class="col-1">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </div>
-                                </div>
-                                <div class="row mb-4">
-                                    <div class="col-5">
-                                        <a href="#" class="btn btn-primary override-btn" id="button-add-link">Add
-                                            another link</a>
-                                    </div>
-                                </div>
-                                <hr>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-img-top course-solid-color d-flex flex-row">
+                                <img src="" alt="">
+                                <button type="button"
+                                    class="btn position-absolute top-0 end-0 right-0 m-2 override-card-img-button">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
                             </div>
-                            <div class="d-flex flex-row justify-content-end">
-                                <a href="./index.html" class="btn btn-primary override-btn me-3">Cancel</a>
-                                <button class="btn btn-primary btn-red">Submit</button>
+                            <div class="card-body d-flex flex-column">
+                                <a href="#" class="mb-2 card-link">
+                                    <div class="card-header-content-container">
+                                        <h6 class="card-title ellipsis">
+                                            <span class="card-title-text">
+                                                CS 4550 12631 Web Development
+                                            </span>
+                                        </h6>
+                                        <h5 class="card-subtitle mb-2 text-muted">CS4550.12631.202410</h5>
+                                        <p class="card-text ellipsis">
+                                            202410_1 Fall 2023 Semester Full Term Grad
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="#" class="course-card-icon">
+                                    <i class="fa-regular fa-note-sticky"></i>
+                                </a>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-img-top course-solid-color d-flex flex-row">
+                                <img src="" alt="">
+                                <button type="button"
+                                    class="btn position-absolute top-0 end-0 right-0 m-2 override-card-img-button">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <a href="#" class="mb-2 card-link">
+                                    <div class="card-header-content-container">
+                                        <h6 class="card-title ellipsis">
+                                            <span class="card-title-text">
+                                                CS 4550 12631 Web Development
+                                            </span>
+                                        </h6>
+                                        <h5 class="card-subtitle mb-2 text-muted">CS4550.12631.202410</h5>
+                                        <p class="card-text ellipsis">
+                                            202410_1 Fall 2023 Semester Full Term Grad
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="#" class="course-card-icon">
+                                    <i class="fa-regular fa-note-sticky"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-img-top course-solid-color d-flex flex-row">
+                                <img src="" alt="">
+                                <button type="button"
+                                    class="btn position-absolute top-0 end-0 right-0 m-2 override-card-img-button">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <a href="#" class="mb-2 card-link">
+                                    <div class="card-header-content-container">
+                                        <h6 class="card-title ellipsis">
+                                            <span class="card-title-text">
+                                                CS 4550 12631 Web Development
+                                            </span>
+                                        </h6>
+                                        <h5 class="card-subtitle mb-2 text-muted">CS4550.12631.202410</h5>
+                                        <p class="card-text ellipsis">
+                                            202410_1 Fall 2023 Semester Full Term Grad
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="#" class="course-card-icon">
+                                    <i class="fa-regular fa-note-sticky"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

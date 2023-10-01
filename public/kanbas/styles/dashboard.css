@@ -34,6 +34,14 @@ nav-link:visited {
     color: #E50000;
 }
 
+#page-header h2 {
+    font-weight: 200;
+}
+
+#page-subheader h4 {
+    font-weight: 400;
+}
+
 #account-icon {
     color: grey;
 }
@@ -53,65 +61,6 @@ nav-link:visited {
     margin: 25px;
 }
 
-#account-page-header-icon {
-    color: #E50000;
-}
-
-#account-sidebar {
-    max-width: 190px;
-
-}
-
-#account-sidebar ul {
-    margin: 0;
-    padding-left: 0;
-}
-
-#account-sidebar li {
-    list-style-type: none;
-    padding-block: 10px;
-    /* margin-block: 20px; */
-}
-
-#account-sidebar li a {
-    text-decoration: none;
-    color: #E50000;
-    font-size: 1.2em;
-}
-
-#account-sidebar li.selected {
-    padding-left: 8px;
-    margin-left: -10px;
-    border-left: 2px solid black;
-}
-
-#account-sidebar li.selected a {
-    color: black;
-    font-weight: 500;
-}
-
-.fa-circle {
-    color: lightgrey;
-}
-
-#username {
-    font-weight: 400;
-}
-
-.profile-section a {
-    text-decoration: none;
-    color: #E50000;
-}
-
-.fa-link {
-    color: grey;
-}
-
-#links-list {
-    list-style: none;
-    padding: 0;
-}
-
 .override-btn {
     background-color: rgb(233, 233, 233);
     border: 1px solid rgb(196, 195, 195);
@@ -124,8 +73,89 @@ nav-link:visited {
     color: black;
 }
 
+#cards-container {
+    max-width: 1100px;
+    margin-right: 50px;
+    column-gap: 20px;
+}
+
 .override-btn:hover {
     background-color: lightgrey;
     color: black;
     border: 1px solid lightgrey;
+}
+
+.course-solid-color {
+    background-color: #2486b9;
+    min-height: 125px;
+}
+
+.col {
+    width: 250px;
+    height: 250px;
+    margin-block: 30px;
+}
+
+.card {
+    width: 100%;
+}
+
+.card-img-top {
+    position: relative;
+}
+
+.override-card-img-button {
+    color: white;
+}
+
+.override-card-img-button:hover {
+    color: white;
+    text-shadow: 0 0 5px lightgrey;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: #E50000;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+    text-decoration-color: #E50000;
+}
+
+.card-body .card-header-content-container {
+    color: #E50000;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-body .card-title {
+    color: #E50000;
+    font-size: 0.9em;
+}
+
+.card-title-text {
+    color: #2486b9;
+}
+
+.card-body .card-subtitle {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.card-body p {
+    font-size: 0.7em;
+    color: grey;
+}
+
+.course-card-icon i {
+    color: grey;
+}
+
+.course-card-icon i:hover {
+    color: #E50000;
 }
