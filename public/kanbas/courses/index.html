@@ -160,8 +160,9 @@
                         <li><a href="#">Settings</a></li>
                     </ul>
                 </div>
-                <div id="courses-content-container">
-                    <div class="col-12 col-lg-9 d-flex flex-column ms-4" id="courses-content">
+
+                <div class="container-fluid d-flex flex-row me-3">
+                    <div class="col-12 col-xl-9 d-flex flex-column mx-4" id="courses-content-container">
                         <div class="d-flex flex-row ms-auto float-end mb-1" id="courses-content-top-buttons">
                             <button class="btn btn-secondary me-1 ellipsis" type="button">
                                 Collapse All
@@ -202,16 +203,16 @@
                                 </div>
                                 <div class="d-flex align-items-center title-icons float-end">
                                     <!-- <div class="dropdown">
-                                            <button class="btn dropdown-toggle p-0 border-0" id="dropdownMenuButton"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
-                                        </div> -->
+                                                <button class="btn dropdown-toggle p-0 border-0" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div> -->
                                     <i class="fa fa-plus me-3" aria-hidden="true"></i>
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </div>
@@ -434,16 +435,16 @@
                                 </div>
                                 <div class="d-flex align-items-center title-icons float-end">
                                     <!-- <div class="dropdown">
-                                            <button class="btn dropdown-toggle p-0 border-0" id="dropdownMenuButton"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
-                                        </div> -->
+                                                <button class="btn dropdown-toggle p-0 border-0" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div> -->
                                     <i class="fa fa-plus me-3" aria-hidden="true"></i>
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </div>
@@ -654,8 +655,146 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3" id="courses-right-sidebar">
 
+                    <div class="col-xl-3 d-flex flex-column px-3" id="courses-right-sidebar">
+                        <div class="course-status">
+                            <h5>Course Status</h5>
+                            <div class="d-flex flex-row">
+                                <button class="btn btn-secondary btn-50-width ellipsis">
+                                    <i class="fa-solid fa-ban"></i>
+                                    Unpublish
+                                </button>
+                                <button class="btn btn-success btn-50-width ellipsis">
+                                    <i class="fa fa-check-circle me-3 check-white" aria-hidden="true"></i>
+                                    Published
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+                            <button class="btn btn-secondary mb-2 text-left ps-4 ellipsis">
+                                <i class="fa-solid fa-file-import"></i>
+                                Import Existing Content
+                            </button>
+                            <button class="btn btn-secondary mb-2 text-left ps-4 ellipsis">
+                                <i class="fa-solid fa-file-import"></i>
+                                Import From Commons
+                            </button>
+                            <button class="btn btn-secondary mb-2 text-left ps-4 ellipsis">
+                                <i class="fa-solid fa-bullseye"></i>
+                                Choose Home Page
+                            </button>
+                            <button class="btn btn-secondary mb-2 text-left ps-4 ellipsis">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                View Course Stream
+                            </button>
+                            <button class="btn btn-secondary mb-2 text-left ps-4 ellipsis">
+                                <i class="fa-regular fa-bell"></i>
+                                New Announcement
+                            </button>
+                            <button class="btn btn-secondary mb-2 text-left ps-4 ellipsis">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                New Analytics
+                            </button>
+                            <button class="btn btn-secondary mb-2 text-left ps-4 ellipsis">
+                                <i class="fa-regular fa-bell"></i>
+                                View Course Notifications
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column mt-3 right-sidebar-to-do">
+                            <h5 class="mb-0">To Do</h5>
+                            <hr>
+                            <div class="d-flex flex-row to-do-item ">
+                                <div class="col-2 mt-1">
+                                    <span class="fa-stack fa-2xs d-block numbered-notification-badger">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <span class="fa fa-stack-1x">
+                                            1
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="col-9">
+                                    <div class="d-flex flex-column">
+                                        <div>
+                                            <a href="#" class="to-do-item-title link-red">Grade A1 - ENV + HTML</a>
+                                        </div>
+                                        <div class="to-do-item-detail right-sidebar-detail">100 points Sep 18 at 11:59pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3 right-sidebar-coming-up">
+                            <div class="d-flex flex-row align-items-center right-sidebar-coming-up-title">
+                                <div class="col-7">
+                                    <h5 class="mb-0 text-nowrap">Coming Up</h5>
+                                </div>
+                                <div class="col-5 text-nowrap ellipsis ms-1">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <a href="#" class="link-red text-nowrap">View Calendar</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="coming-up-items mb-3">
+                                <div class="right-sidebar-coming-up-item">
+                                    <div class="d-flex flex-row">
+                                        <div class="col-1 coming-up-item-icon">
+                                            <i class="fa-regular fa-calendar"></i>
+                                        </div>
+                                        <div class="col-11 d-flex flex-column coming-up-item-content">
+                                            <div class="row coming-up-item-title">
+                                                <a href="#" class="link-red">Lecture</a>
+                                                <div class="coming-up-item-detail right-sidebar-detail">
+                                                    CS5660.12631.202410
+                                                    <br>
+                                                    Sep 11 at 11:45am
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-sidebar-coming-up-item">
+                                    <div class="d-flex flex-row">
+                                        <div class="col-1 coming-up-item-icon">
+                                            <i class="fa-regular fa-calendar"></i>
+                                        </div>
+                                        <div class="col-11 d-flex flex-column coming-up-item-content">
+                                            <div class="row coming-up-item-title">
+                                                <a href="#" class="link-red">CS5610 06 SP23 Lecture</a>
+                                                <div class="coming-up-item-detail right-sidebar-detail">
+                                                    CS4550.12631.202410
+                                                    <br>
+                                                    Sep 11 at 6pm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-sidebar-coming-up-item">
+                                    <div class="d-flex flex-row">
+                                        <div class="col-1 coming-up-item-icon">
+                                            <i class="fa-regular fa-calendar"></i>
+                                        </div>
+                                        <div class="col-11 d-flex flex-column coming-up-item-content">
+                                            <div class="row coming-up-item-title">
+                                                <a href="#" class="link-red">CS5610 Web Development Summer 1 2023 -
+                                                    LECTURE</a>
+                                                <div class="coming-up-item-detail right-sidebar-detail">
+                                                    CS4550.12631.202410
+                                                    <br>
+                                                    Sep 11 at 7pm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-sidebar-coming-up-next-week">
+                                <a href="#" class="link-red link-small">12 more in the next week...</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

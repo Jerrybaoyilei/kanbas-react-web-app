@@ -105,10 +105,6 @@
     font-weight: 500;
 }
 
-#courses-content-container {
-    width: 100%;
-}
-
 .fa-check-circle {
     color: green;
 }
@@ -179,5 +175,42 @@
 
 .fa-link {
     color: green;
+    font-size: 0.8em;
+}
+
+.btn-50-width {
+    width: 50%;
+}
+
+.check-white {
+    color: white;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.numbered-notification-badger {
+    color: #E50000;
+}
+
+.numbered-notification-badger span {
+    color: white;
+}
+
+.link-red {
+    text-decoration: none;
+    color: #E50000;
+}
+
+.to-do-item-title:hover {
+    text-decoration: underline;
+}
+
+.right-sidebar-detail {
+    font-size: 0.8em;
+}
+
+.link-small {
     font-size: 0.8em;
 }
