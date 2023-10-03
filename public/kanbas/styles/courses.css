@@ -34,10 +34,6 @@
     color: #E50000;
 }
 
-#account-page-header h2 {
-    font-weight: 300;
-}
-
 #account-icon {
     color: grey;
 }
@@ -57,58 +53,64 @@
     margin: 25px;
 }
 
-#account-page-header-icon {
+#courses-page-header-icon {
     color: #E50000;
 }
 
-#account-sidebar {
-    max-width: 190px;
-
+.breadcrumb-item a {
+    color: #E50000;
+    text-decoration: none;
 }
 
-#account-sidebar ul {
+#courses-sidebar {
+    max-width: 190px;
+}
+
+#courses-sidebar-title {
+    font-style: italic;
+    color: rgb(93, 93, 93);
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#courses-sidebar ul {
     margin: 0;
     padding-left: 0;
 }
 
-#account-sidebar li {
+#courses-sidebar li {
     list-style-type: none;
     padding-block: 10px;
     /* margin-block: 20px; */
 }
 
-#account-sidebar li a {
+#courses-sidebar li a {
     text-decoration: none;
     color: #E50000;
     font-size: 1.2em;
 }
 
-#account-sidebar li.selected {
+#courses-sidebar li.selected {
     padding-left: 8px;
     margin-left: -10px;
     border-left: 2px solid black;
 }
 
-#account-sidebar li.selected a {
+#courses-sidebar li.selected a {
     color: black;
     font-weight: 500;
 }
 
-.fa-circle {
-    color: lightgrey;
+#courses-content-container {
+    width: 100%;
 }
 
-#username {
-    font-weight: 400;
-}
-
-#settings-link {
-    text-decoration: none;
-    color: #E50000;
-}
-
-.fa-link {
-    color: grey;
+.fa-check-circle {
+    color: green;
 }
 
 #links-list {
@@ -152,15 +154,30 @@
     border: 1px solid white;
 }
 
-.profile-label {
-    font-weight: 600;
+.course-module a {
+    text-decoration: none;
+    color: black;
 }
 
-.fa-xmark {
+.course-module a:hover {
+    text-decoration: underline;
+}
+
+.module-title .two-ellipsis {
+    padding-left: 2px;
+}
+
+.finished {
+    border-radius: 0;
+    border-left: 3px solid;
+    border-left-color: green;
+}
+
+.course-module .module-slide-link {
     color: #E50000;
 }
 
-#button-add-link {
-    font-size: 0.9em;
-    padding-block: 0;
+.fa-link {
+    color: green;
+    font-size: 0.8em;
 }
