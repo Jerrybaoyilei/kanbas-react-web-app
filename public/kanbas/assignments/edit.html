@@ -146,7 +146,7 @@
                         <li><a href="#">Zoom Meetings</a></li>
                         <li class="selected"><a href="#">Assignments</a></li>
                         <li><a href="#">Quizzes</a></li>
-                        <li><a href="#">Grades</a></li>
+                        <li><a href="../grades/grades.html">Grades</a></li>
                         <li><a href="#">People</a></li>
                         <li><a href="#">Panopto Video</a></li>
                         <li><a href="#">Discussions</a></li>
@@ -233,10 +233,9 @@
                             </div>
                         </div>
                         <div class="row mb-3" id="assignment-submission-type-container">
-                            <label for="assignment-submission-type-box" class="col-4 col-form-label text-end">
-                                Submission
-                                Type
-                            </label>
+                            <div class="col-4 col-form-label text-end">
+                                Submission Type
+                            </div>
                             <div class="col-6">
                                 <div class="d-flex border rounded" id="assignment-submission-type-box">
                                     <div class="col-7 m-4">
@@ -291,9 +290,9 @@
                             </div>
                         </div>
                         <div class="row mb-3" id="assignment-assign-container">
-                            <label for="assignment-assign-box" class="col-4 col-form-label text-end">
+                            <div class="col-4 col-form-label text-end">
                                 Assign
-                            </label>
+                            </div>
                             <div class="col-6">
                                 <div class="border rounded-top p-4" id="assignment-assign-box">
                                     <div class="row mb-3">
@@ -309,8 +308,8 @@
                                         <label for="due" class="form-label">
                                             <h6>Due</h6>
                                         </label>
-                                        <div class="input-group" id="due">
-                                            <input type="text" class="form-control" name="due"
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="due" id="due"
                                                 value="Sep 18, 2023, 11:59 PM">
                                             <span class="input-group-text" id="due-icon">
                                                 <i class="fa-regular fa-calendar-days"></i>
@@ -322,10 +321,10 @@
                                             <label for="available-from" class="form-label">
                                                 <h6>Available From</h6>
                                             </label>
-                                            <div class="input-group" id="available-from">
+                                            <div class="input-group">
                                                 <input type="text" class="form-control" name="available-from"
-                                                    value="Sep 6, 2023, 12:00 AM">
-                                                <span class="input-group-text" id="due-icon">
+                                                    id="available-from" value="Sep 6, 2023, 12:00 AM">
+                                                <span class="input-group-text" id="from-icon">
                                                     <i class="fa-regular fa-calendar-days"></i>
                                                 </span>
                                             </div>
@@ -334,9 +333,10 @@
                                             <label for="available-until" class="form-label">
                                                 <h6>Until</h6>
                                             </label>
-                                            <div class="input-group" id="available-until">
-                                                <input type="text" class="form-control" name="available-until" value="">
-                                                <span class="input-group-text" id="due-icon">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="available-until"
+                                                    name="available-until" value="">
+                                                <span class="input-group-text" id="until-icon">
                                                     <i class="fa-regular fa-calendar-days"></i>
                                                 </span>
                                             </div>
