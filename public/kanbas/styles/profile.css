@@ -61,35 +61,35 @@
     color: #E50000;
 }
 
-#account-sidebar {
+.secondary-sidebar {
     max-width: 190px;
 
 }
 
-#account-sidebar ul {
+.secondary-sidebar ul {
     margin: 0;
     padding-left: 0;
 }
 
-#account-sidebar li {
+.secondary-sidebar li {
     list-style-type: none;
     padding-block: 10px;
     /* margin-block: 20px; */
 }
 
-#account-sidebar li a {
+.secondary-sidebar li a {
     text-decoration: none;
     color: #E50000;
     font-size: 1.2em;
 }
 
-#account-sidebar li.selected {
+.secondary-sidebar li.selected {
     padding-left: 8px;
     margin-left: -10px;
     border-left: 2px solid black;
 }
 
-#account-sidebar li.selected a {
+.secondary-sidebar li.selected a {
     color: black;
     font-weight: 500;
 }

@@ -62,11 +62,11 @@
     text-decoration: none;
 }
 
-#assignments-sidebar {
+.secondary-sidebar {
     max-width: 190px;
 }
 
-#assignments-sidebar-title {
+.secondary-sidebar-title {
     font-style: italic;
     color: rgb(93, 93, 93);
 }
@@ -77,24 +77,24 @@
     text-overflow: ellipsis;
 }
 
-#assignments-sidebar ul {
+.secondary-sidebar ul {
     margin: 0;
     padding-left: 0;
 }
 
-#assignments-sidebar li {
+.secondary-sidebar li {
     list-style-type: none;
     padding-block: 10px;
     /* margin-block: 20px; */
 }
 
-#assignments-sidebar li a {
+.secondary-sidebar li a {
     text-decoration: none;
     color: #E50000;
     font-size: 1.2em;
 }
 
-#assignments-sidebar li.selected {
+.secondary-sidebar li.selected {
     padding-left: 8px;
     margin-left: -10px;
     border-left: 2px solid black;
