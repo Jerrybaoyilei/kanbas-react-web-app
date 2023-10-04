@@ -105,7 +105,7 @@
     font-weight: 500;
 }
 
-.fa-check-circle {
+/* .fa-check-circle {
     color: green;
 }
 
@@ -148,83 +148,25 @@
     background-color: #b90000;
     color: white;
     border: 1px solid white;
-}
+} */
 
 .link-no-decoration {
     text-decoration: none;
     color: black;
 }
 
-.assignment-module a:hover {
-    text-decoration: underline;
-}
-
-.module-title .two-ellipsis {
-    padding-left: 2px;
-}
-
-.finished {
-    border-radius: 0;
-    border-left: 3px solid;
-    border-left-color: green;
-}
-
-.assignment-module .module-slide-link {
-    color: #E50000;
-}
-
-.fa-link {
-    color: green;
-    font-size: 0.8em;
-}
-
-.btn-50-width {
-    width: 50%;
-}
-
-.check-white {
-    color: white;
-}
-
-.text-left {
-    text-align: left !important;
-}
-
-.numbered-notification-badger {
-    color: #E50000;
-}
-
 .link-red {
-    text-decoration: none;
     color: #E50000;
 }
 
-.to-do-item-title:hover {
-    text-decoration: underline;
-}
-
-.right-sidebar-detail {
-    font-size: 0.8em;
-}
-
-.link-small {
-    font-size: 0.8em;
-}
-
-.assignment-item-icon {
-    color: green;
-}
-
-.assignment-item-title {
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.assignment-item-detail,
-.assignment-item-due-date {
+.column-subtitle {
     font-size: 0.9em;
 }
 
-.border-dotted {
-    border-style: dashed !important;
+td {
+    text-align: center;
+}
+
+.focus-red:focus {
+    border-color: #E50000;
 }
