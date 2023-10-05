@@ -94,6 +94,14 @@
     font-weight: 500;
 }
 
+.secondary-sidebar li a:hover {
+    color: #a30000;
+}
+
+.secondary-sidebar li.selected a:hover {
+    color: black;
+}
+
 .fa-circle {
     color: lightgrey;
 }
