@@ -199,6 +199,15 @@
     color: #E50000;
 }
 
+.link-red:hover,
+.secondary-sidebar li a:hover {
+    color: #a30000;
+}
+
+.secondary-sidebar li.selected a:hover {
+    color: black;
+}
+
 .to-do-item-title:hover {
     text-decoration: underline;
 }

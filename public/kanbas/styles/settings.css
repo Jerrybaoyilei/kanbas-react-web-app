@@ -137,3 +137,11 @@ td {
 .secondary-sidebar li a:hover {
     color: #a30000;
 }
+
+.font-small {
+    font-size: 0.8em;
+}
+
+.navigation-subitem {
+    font-size: 0.9em;
+}
