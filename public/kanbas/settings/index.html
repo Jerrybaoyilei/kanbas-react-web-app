@@ -4,37 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanbas - Settings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/settings.css">
+    <title>Course Details</title>
 </head>
 
 <body>
-    <table border="0" width="33.5%">
-        <tbody>
-            <tr valign="top">
-                <!-- First column -->
-                <td>
+    <div class="d-flex flex-row" id="wrapper">
+        <div id="sidebar-wrapper">
+            <!-- Sidebar reference: https://getbootstrap.com/docs/5.0/examples/sidebars/ -->
+            <!-- Sticking sidebar to left of screen: https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/dist/index.html -->
+            <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-white bg-dark m-0"
+                id="kanbas-navbar">
+                <a href="./kanbasNav.html" class="d-flex align-items-center mb-md-0 text-white text-decoration-none">
+                    <img width="85" height="85" src="../images/NU_RGB_Notched-N_motto_RW.png"
+                        alt="Northeastern University Logo">
+                </a>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="../profile/index.html" class="nav-link sidebar-item"
+                            aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span id="account-icon">
+                                    <i class="fa-regular fa-circle-user fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Account</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../dashboard/index.html" class="nav-link sidebar-item"
+                            aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-gauge-high fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Dashboard</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link sidebar-item active"
+                            aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-book fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Courses</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link sidebar-item" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-calendar-days fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Calendar</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link sidebar-item" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-inbox fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Inbox</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link sidebar-item" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-clock fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">History</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link sidebar-item" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-desktop fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Studio</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link sidebar-item" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-solid fa-right-from-bracket fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Commons</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link sidebar-item" aria-current="Navigate to account page">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>
+                                    <i class="fa-regular fa-circle-question fa-2x"></i>
+                                </span>
+                                <div class="kanbas-navbar-item-text">Help</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+        <div class="page-content-wrapper container-fluid">
+            <div id="assignments-page-header" class="d-flex flex-row align-items-center">
+                <i class="fa-solid fa-bars fa-1x me-3" id="settings-page-header-icon"></i>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0 flex-nowrap ellipsis">
+                        <li class="breadcrumb-item ellipsis"><a href="#">CS4550.12631.202410</a></li>
+                        <li class="breadcrumb-item active ellipsis" aria-current="page">Settings</li>
+                    </ol>
+                </nav>
+            </div>
+            <hr>
+            <div class="d-flex flex-row">
+                <div class="d-flex flex-column secondary-sidebar" id="settings-sidebar">
+                    <span class="ellipsis mb-2 sidebar-title">
+                        202410_1 Fall 2023 Semester
+                    </span>
                     <ul>
-                        <li><a href="../navigation/accountNav.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="../navigation/courseNav.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <!-- Second column -->
-                <td>
-                    <ul>
-                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="../courses/index.html">Home</a></li>
                         <li><a href="#">Modules</a></li>
                         <li><a href="#">Piazza</a></li>
                         <li><a href="#">Zoom Meetings</a></li>
                         <li><a href="../assignments/index.html">Assignments</a></li>
                         <li><a href="#">Quizzes</a></li>
-                        <li><a href="../grades.html">Grades</a></li>
+                        <li><a href="../grades/grades.html">Grades</a></li>
                         <li><a href="#">People</a></li>
                         <li><a href="#">Panopto Video</a></li>
                         <li><a href="#">Discussions</a></li>
@@ -45,23 +153,424 @@
                         <li><a href="#">Outcomes</a></li>
                         <li><a href="#">Collaborations</a></li>
                         <li><a href="#">Syllabus</a></li>
-                        <li><a href="./index.html">Settings</a></li>
+                        <li><a href="#">Progress Reports (EAB Navigate)</a></li>
+                        <li class="selected"><a href="../settings/index.html">Settings</a></li>
                     </ul>
-                </td>
-                <!-- Third column, tabs in settings -->
-                <td>
-                    <ul>
-                        <li><a href="./courseDetails.html">Course Details</a></li>
-                        <li><a href="#">Sections</a></li>
-                        <li><a href="./navigation.html">Navigation</a></li>
-                        <li><a href="#">Apps</a></li>
-                        <li><a href="#">Feature Options</a></li>
-                        <li><a href="#">Integrations</a></li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                </div>
+                <div class="container-fluid d-flex flex-column mx-4" id="settings-content-container">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active settings-nav-item" id="nav-course-details-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-course-details" type="button" role="tab"
+                                aria-controls="nav-course-details" aria-selected="true">Course Details</button>
+                            <button class="nav-link settings-nav-item" id="nav-sections-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-sections" type="button" role="tab" aria-controls="nav-sections"
+                                aria-selected="false">Sections</button>
+                            <button class="nav-link settings-nav-item" id="nav-navigation-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-navigation" type="button" role="tab" aria-controls="nav-navigation"
+                                aria-selected="false">Navigation</button>
+                            <button class="nav-link settings-nav-item" id="nav-apps-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-apps" type="button" role="tab" aria-controls="nav-apps"
+                                aria-selected="false">Apps</button>
+                            <button class="nav-link settings-nav-item" id="nav-feature-options-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-feature-options" type="button" role="tab"
+                                aria-controls="nav-feature-options" aria-selected="false">Feature Options</button>
+                            <button class="nav-link settings-nav-item" id="nav-integrations-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-integrations" type="button" role="tab"
+                                aria-controls="nav-integrations" aria-selected="false">Integrations</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-course-details" role="tabpanel"
+                            aria-labelledby="nav-course-details-tab" tabindex="0">
+                            <h3 class="mt-4 mb-3">Course Details</h3>
+                            <form action="../courses/index.html">
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold" for="course-details-image">
+                                        Image:
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="border p-5 text-center">
+                                            <a href="#" class="btn btn-secondary form-control ellipsis" type="file"
+                                                id="course-details-image">
+                                                Choose
+                                                Image
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        Name:
+                                    </div>
+                                    <div class="col ellipsis">
+                                        CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        Course Code:
+                                    </div>
+                                    <div class="col ellipsis">
+                                        CS4550.12631.202410
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        Blueprint Course:
+                                    </div>
+                                    <div class="col ellipsis">
+                                        No
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        Course Template:
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="course-template" disabled>
+                                            <label for="course-template" class="form-check-label">
+                                                Enable course as a Course Template
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="time-zone" class="col-3 fw-bold">
+                                        Time Zone:
+                                    </label>
+                                    <div class="col-7">
+                                        <select class="form-select" aria-label="Select Time Zone" id="time-zone">
+                                            <option selected>Eastern Time (US & Canada) (-5:00/-4:00)</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        SIS ID:
+                                    </div>
+                                    <div class="col ellipsis">
+                                        CS4550.12631.202410
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        Subaccount:
+                                    </div>
+                                    <div class="col ellipsis">
+                                        <a href="#" class="link-red link-no-decoration">CS Undergrad</a>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        Term:
+                                    </div>
+                                    <div class="col ellipsis">
+                                        202410_1 Fall 2023 Semester Full term
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="participation" class="col-3 fw-bold">
+                                        Participation:
+                                    </label>
+                                    <div class="col-7">
+                                        <select class="form-select" aria-label="Select Participation"
+                                            id="participation">
+                                            <option selected>Term</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                    </div>
+                                    <div class="col ellipsis">
+                                        Course participation is limited to <strong>term</strong> start and end dates.
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                    </div>
+                                    <div class="col-5 ellipsis">
+                                        <div class="mb-3">
+                                            <label for="start-date" class="form-label fw-bold">Start</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control border-end-0" id="start-date">
+                                                <span class="input-group-text bg-transparent"><i
+                                                        class="fa-regular fa-calendar-days"></i></span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="end-date" class="form-label fw-bold">End</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control border-end-0" id="end-date">
+                                                <span class="input-group-text bg-transparent"><i
+                                                        class="fa-regular fa-calendar-days"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="restrict-view-before-start">
+                                            <label for="restrict-view-before-start" class="form-check-label">
+                                                Restrict students from viewing course before term start date
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="restrict-view-after-end">
+                                            <label for="restrict-view-after-end" class="form-check-label">
+                                                Restrict students from viewing course after term end date
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="default-due-time" class="col-3 fw-bold">
+                                        Default Due Time:
+                                    </label>
+                                    <div class="col-7">
+                                        <select class="form-select" aria-label="Select Participation"
+                                            id="default-due-time">
+                                            <option selected>Account Default (11:59pm)</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                    </div>
+                                    <div class="col-8">
+                                        This influences the user interface for setting due dates. It does not change the
+                                        time due for any existing assignments.
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="language" class="col-3 fw-bold">
+                                        Language:
+                                    </label>
+                                    <div class="col-7">
+                                        <select class="form-select" aria-label="Select Participation" id="language">
+                                            <option selected>Not set (user-configurable, defaults to English (United
+                                                States))</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                    </div>
+                                    <div class="col-8">
+                                        This will override any user/system language preferences. This is only
+                                        recommended for foreign language courses
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        File Storage:
+                                    </div>
+                                    <div class="col ellipsis">
+                                        10000 megabytes
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        Large Course:
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="large-course">
+                                            <label for="large-course" class="form-check-label">
+                                                Launch SpeedGrader Filtered by Student Group
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        Grading Scheme:
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="grading-scheme">
+                                            <label for="grading-scheme" class="form-check-label">
+                                                Enable course grading scheme
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="license" class="col-3 fw-bold">
+                                        License:
+                                    </label>
+                                    <div class="col-7">
+                                        <select class="form-select" aria-label="Select Participation" id="license">
+                                            <option selected>
+                                                Private (Copyrighted)
+                                            </option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-1 p-0">
+                                        <i class="fa-regular fa-circle-question"></i>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        File Copyright:
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="file-copyright">
+                                            <label for="file-copyright" class="form-check-label">
+                                                Copyright and license information must be provided for files before they
+                                                are published.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="visibility" class="col-3 fw-bold">
+                                        Visibility:
+                                    </label>
+                                    <div class="col-7">
+                                        <span>If you need to make your course public pleaase contact your
+                                            administrator/support.</span>
+                                        <select class="form-select" aria-label="Select Participation" id="visibility"
+                                            disabled>
+                                            <option selected>
+                                                Course
+                                            </option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-1 p-0">
+                                        <i class="fa-regular fa-circle-question"></i>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="include-in-public-course-index">
+                                            <label for="include-in-public-course-index" class="form-check-label">
+                                                Include this course in teh public course index
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="format" class="col-3 fw-bold">
+                                        Format:
+                                    </label>
+                                    <div class="col-7">
+                                        <select class="form-select" aria-label="Select Participation" id="format">
+                                            <option selected>On Campus</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                        Mastery Paths:
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="mastery-paths">
+                                            <label for="mastery-paths" class="form-check-label">
+                                                Enable individual learning paths for students based on assessment
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="description" class="col-3 fw-bold">
+                                        Description:
+                                    </label>
+                                    <div class="col-7">
+                                        <textarea class="form-control" id="description" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-3 fw-bold">
+                                    </div>
+                                    <div class="col-7">
+                                        <a href="#" class="link-red link-no-decoration">more options</a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <button class="btn btn-danger float-end">Update Course Details</button>
+
+
+
+
+
+
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-sections" role="tabpanel" aria-labelledby="nav-sections-tab"
+                            tabindex="0">
+                            Sections
+                        </div>
+                        <div class="tab-pane fade" id="nav-navigation" role="tabpanel"
+                            aria-labelledby="nav-navigation-tab" tabindex="0">
+                            Navigation
+                        </div>
+                        <div class="tab-pane fade" id="nav-apps" role="tabpanel" aria-labelledby="nav-apps-tab"
+                            tabindex="0">
+                            Apps
+                        </div>
+                        <div class="tab-pane fade" id="nav-feature-options" role="tabpanel"
+                            aria-labelledby="nav-feature-options-tab" tabindex="0">
+                            Feature Options
+                        </div>
+                        <div class="tab-pane fade" id="nav-integrations" role="tabpanel"
+                            aria-labelledby="nav-integrations-tab" tabindex="0">
+                            Integrations
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d86fba7c7b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

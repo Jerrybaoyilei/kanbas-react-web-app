@@ -15,21 +15,21 @@
     font-size: 0.9em !important;
 }
 
-.nav-link,
-.nav-link:visited {
+.sidebar-item,
+.sidebar-item:visited {
     color: #ffffff;
     max-width: 100% !important;
 }
 
-.nav-link:hover {
+.sidebar-item:hover {
     color: #E50000;
 }
 
-.nav-pills .nav-link span {
+.nav-pills .sidebar-item span {
     color: #E50000;
 }
 
-.nav-pills .nav-link.active {
+.nav-pills .sidebar-item.active {
     background-color: #ffffff;
     color: #E50000;
 }
@@ -38,14 +38,14 @@
     color: grey;
 }
 
-.nav-pills .nav-link {
+.nav-pills .sidebar-item {
     width: 100vw;
     border-radius: 0;
     padding: 5px;
 }
 
-.nav-pills .nav-link div span,
-.nav-pills .nav-link div div {
+.nav-pills .sidebar-item div span,
+.nav-pills .sidebar-item div div {
     margin-block: 3px;
 }
 
@@ -66,7 +66,7 @@
     max-width: 190px;
 }
 
-#assignments-sidebar-title {
+.sidebar-title {
     font-style: italic;
     color: rgb(93, 93, 93);
 }
@@ -105,57 +105,18 @@
     font-weight: 500;
 }
 
-/* .fa-check-circle {
-    color: green;
-}
-
-#links-list {
-    list-style: none;
-    padding: 0;
-}
-
-.override-btn {
-    background-color: rgb(233, 233, 233);
-    border: 1px solid rgb(196, 195, 195);
+.secondary-sidebar li.selected a:hover {
     color: black;
 }
-
-.btn-primary.override-btn:active {
-    background-color: grey;
-    border: 1px solid grey;
-    color: black;
-}
-
-.override-btn:hover {
-    background-color: lightgrey;
-    color: black;
-    border: 1px solid lightgrey;
-}
-
-.btn-red {
-    color: white;
-    background-color: #E50000;
-    border: 1px solid rgb(196, 195, 195);
-}
-
-.btn-primary.btn-red:active {
-    background-color: #a00000;
-    border: 1px solid white;
-    color: white;
-}
-
-.btn-red:hover {
-    background-color: #b90000;
-    color: white;
-    border: 1px solid white;
-} */
 
 .link-no-decoration {
     text-decoration: none;
     color: black;
 }
 
-.link-red {
+.link-red,
+.settings-nav-item,
+.fa-circle-question {
     color: #E50000;
 }
 
@@ -169,4 +130,10 @@ td {
 
 .focus-red:focus {
     border-color: #E50000;
+}
+
+.settings-nav-item:hover,
+.link-red:hover,
+.secondary-sidebar li a:hover {
+    color: #a30000;
 }
