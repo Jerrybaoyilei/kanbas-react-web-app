@@ -1,3 +1,9 @@
+# Important!
+- Main project for CS 5610: Web Development at Northeastern University.
+- Full Stack reproduction of Canvas, an online learning platform that students at Northeastern University uses for coursrworks. Tech stacks used are: HTML, CSS, JacaScript, Bootstrap, React.js, Express.js, Node.js, and MongoDB. 
+- Live preview is [here](https://vermillion-basbousa-8fc6fb.netlify.app). Click on "Kanbas" and there you go!
+- All the learning from completing this project will lead to progress on my [PhotoFinder project](https://github.com/jerrybaoyilei/photofinder) This is my individual project set to be completed before end of November 2023
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
