@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="d-flex flex-row container-fluid" id="wrapper">
+    <div class="d-flex flex-row container-fluid p-0" id="wrapper">
         <div class="d-none d-md-block" id="sidebar-wrapper">
             <!-- Sidebar reference: https://getbootstrap.com/docs/5.0/examples/sidebars/ -->
             <!-- Sticking sidebar to left of screen: https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/dist/index.html -->
@@ -117,7 +117,7 @@
             </div>
         </div>
         <div class="page-content-wrapper container-fluid">
-            <div id="courses-page-header" class="d-flex flex-row align-items-center">
+            <div id="courses-page-header" class="d-flex flex-row align-items-center container-fluid pt-3">
                 <i class="fa-solid fa-bars fa-1x me-3" id="courses-page-header-icon"></i>
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb m-0">
@@ -164,7 +164,8 @@
                 <div class="container-fluid d-flex flex-row me-xxl-3">
                     <div class="col-xxl-10 col-12">
                         <div class="d-flex flex-column mx-4" id="courses-content-container">
-                            <div class="d-flex flex-row ms-auto float-end mb-1" id="courses-content-top-buttons">
+                            <div class="d-flex flex-row ms-auto float-end mb-1 container-fluid"
+                                id="courses-content-top-buttons">
                                 <button class="btn btn-secondary me-1 ellipsis" type="button">
                                     Collapse All
                                 </button>
