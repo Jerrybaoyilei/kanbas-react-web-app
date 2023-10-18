@@ -3,7 +3,6 @@ import PathParameters from "./PathParameters";
 import Classes from "./Classes";
 import Styles from './Styles';
 import ConditionalOutput from "./ConditionalOutput";
-import TodoItem from "./Todos/TodoItem";
 import TodoList from "./Todos/TodoList";
 
 function Assignment3() {
