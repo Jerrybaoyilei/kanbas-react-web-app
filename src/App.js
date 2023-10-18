@@ -12,7 +12,7 @@ function App() {
       <div>
         <Routes>
           {/* Default route */}
-          <Route path="/" element={<Navigate to="/Labs" />} />
+          <Route path="/" element={<Navigate to="/Kanbas " />} />
           {/* Route: http://localhost:3000/#/hello */}
           <Route path="/hello" element={<HelloWorld />} />
           {/* Route: http://localhost:3000/#/Labs */}
