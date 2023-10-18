@@ -28,6 +28,7 @@ function JavaScript() {
             <Spread />
             <Destructuring />
             <FunctionDestructuring />
+
         </div>
     )
 }
