@@ -1,0 +1,8 @@
+/* Reference: https://stackoverflow.com/questions/26798470/how-to-change-default-separator-icon-in-bootstrap-3-breadcrumbs/26798573 */
+/* + sign refers to the selector immediately after the previous selector; in this case, the .breadcrum-item immediately after another .breadcrumb-item */
+.breadcrumb-item+.breadcrumb-item:before {
+    content: ">" !important;
+    color: grey;
+}
+
+/* course id */

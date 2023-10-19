@@ -1,20 +1,25 @@
 import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
+import React from "react";
+import "./index.css";
+import CourseTopNavigation from "./CourseTopNavigation";
 
 function Courses() {
     const { courseId } = useParams();
     const course = db.courses.find((course) => course._id === courseId);
+
     return (
         <div>
-            <h1>Course {course.name}</h1>
-            <CourseNavigation />
+            <CourseTopNavigation />
+            <hr className="mb-3" />
             <div>
+                <CourseNavigation />
                 <div
                     className="overflow-y-scroll position-fixed bottom-0 end-0"
                     style={{
                         left: "320px",
-                        top: "50px",
+                        top: "70px",
                     }}
                 >
                     <Routes>
@@ -34,4 +39,5 @@ function Courses() {
         </div>
     );
 }
+
 export default Courses;
