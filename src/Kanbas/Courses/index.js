@@ -1,10 +1,14 @@
 import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
+import CourseTopNavigation from "./CourseTopNavigation";
 import CourseNavigation from "./CourseNavigation";
+import Modules from "./Modules";
+import Home from "./Home";
 import React from "react";
 import '../../index.css';
 import "./index.css";
-import CourseTopNavigation from "./CourseTopNavigation";
+
+
 
 function Courses() {
     const { courseId } = useParams();
@@ -25,8 +29,8 @@ function Courses() {
                 >
                     <Routes>
                         <Route path="/" element={<Navigate to="Home" />} />
-                        <Route path="Home" element={<h1>Home</h1>} />
-                        <Route path="Modules" element={<h1>Modules</h1>} />
+                        <Route path="Home" element={<Home />} />
+                        <Route path="Modules" element={<Modules />} />
                         <Route path="Assignments" element={<h1>Assignments</h1>} />
                         <Route
                             path="Assignments/:assignmentId"
