@@ -16,17 +16,20 @@ function AssignmentEditor() {
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
     return (
-        <div>
+        <div className="me-5">
             <h2>Assignment Name</h2>
             <input value={assignment.title}
                 className="form-control mb-2" />
-            <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-                className="btn btn-danger">
-                Cancel
-            </Link>
-            <button onClick={handleSave} className="btn btn-success me-2">
-                Save
-            </button>
+            <hr />
+            <div className="float-end me-1">
+                <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
+                    className="btn btn-danger me-2">
+                    Cancel
+                </Link>
+                <button onClick={handleSave} className="btn btn-success me-2">
+                    Save
+                </button>
+            </div>
         </div>
     );
 }

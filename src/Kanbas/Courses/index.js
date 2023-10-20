@@ -5,6 +5,7 @@ import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/AssignmentEditor";
 import React from "react";
 import '../../index.css';
 import "./index.css";
@@ -35,7 +36,7 @@ function Courses() {
                         <Route path="Assignments" element={<Assignments />} />
                         <Route
                             path="Assignments/:assignmentId"
-                            element={<h1>Assignment Editor</h1>}
+                            element={<AssignmentEditor />}
                         />
                         <Route path="Grades" element={<h1>Grades</h1>} />
                     </Routes>
