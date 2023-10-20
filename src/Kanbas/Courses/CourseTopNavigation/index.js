@@ -6,20 +6,18 @@ import '../../index.css'
 
 function CourseTopNavigation() {
 
-    const { courseId } = useParams();
+    const { courseId, assignmentId } = useParams();
 
     return (
         <nav aria-label="breadcrumb" className="d-flex align-items-center">
             <RxHamburgerMenu className="m-3 mb-0 wd-link-red" />
-            <ol className="breadcrumb m-3 mb-0">
+            <ol className="breadcrumb m-3 mb-0 ms-0">
                 <li className="breadcrumb-item">
                     <Link key={courseId} className='wd-link-red'>
                         {courseId}
                     </Link>
                 </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                    {extractCourseNavTabFromUrl()}
-                </li>
+                {extractCourseNavTabFromUrl()}
             </ol>
         </nav>
     )
@@ -33,12 +31,37 @@ function extractCourseNavTabFromUrl() {
     const urlSegments = url.split("/");
     // Find the index of the "Courses" segment
     const coursesIndex = urlSegments.findIndex((segment) => segment === "Courses");
-    // Check if courses is in the URL and there's at least one segment (i.e., courseId after it)
-    if (coursesIndex != -1 && coursesIndex + 2 < urlSegments.length) {
-        return urlSegments[coursesIndex + 2].toString();
-    } else {
-        return "";
+    // First check we are in the courses section (i.e., URL has courses in it)
+    if (coursesIndex != 1) {
+        // There are 3 segments after Courses in URL: courseId, Courses tab name, specific item in tab
+        if (coursesIndex + 3 < urlSegments.length) {
+            const tabName = urlSegments[coursesIndex + 2];
+            const specificItem = urlSegments[coursesIndex + 3];
+            return (
+                <>
+                    <li className="breadcrumb-item">
+                        <Link key={tabName} className='wd-link-red'>
+                            {tabName}
+                        </Link>
+                    </li>
+                    <li className="breadcrumb-item active" aria-current="page">
+                        {specificItem}
+                    </li>
+                </>
+            )
+        }
+        // There are 2 segments after Courses in URL: courseId, Courses tab name
+        else if (coursesIndex + 2 < urlSegments.length) {
+            const tabName = urlSegments[coursesIndex + 2];
+            return (
+                <li className="breadcrumb-item active" aria-current="page">
+                    {tabName}
+                </li>
+            )
+        }
     }
 }
+
+// Handles if the navigation is Assignments, 
 
 export default CourseTopNavigation;
