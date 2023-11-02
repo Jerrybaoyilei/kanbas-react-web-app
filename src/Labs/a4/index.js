@@ -12,6 +12,7 @@ import ArrayStateVariable from "./ArrayStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
 import React from 'react';
 import ReduxExamples from "./ReduxExamples";
+import TodoList from "./ReduxExamples/todos/TodoList";
 
 
 function Assignment4() {
@@ -22,6 +23,7 @@ function Assignment4() {
     return (
         <div>
             <h1>Assignment 4</h1>
+            <TodoList />
             <ReduxExamples />
             <ClickEvent />
             <PassingDataOnEvent />
