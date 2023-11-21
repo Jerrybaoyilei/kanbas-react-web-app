@@ -8,3 +8,12 @@
     text-decoration: none;
     color: red;
 }
+
+.wd-input-logo {
+    border-right: none !important;
+    background-color: transparent !important;
+}
+
+.wd-input-textbar {
+    border-left: none !important;
+}
