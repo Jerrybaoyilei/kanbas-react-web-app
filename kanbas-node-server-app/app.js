@@ -1,7 +1,7 @@
 import express from 'express';
 import Hello from './hello.js';
 import Lab5 from './lab5.js';
-import CourseRoutes from "./courses/routes.js"; // Update the import path to match the correct casing
+import CourseRoutes from "./courses/routes.js";
 import cors from "cors";
 
 const app = express();
