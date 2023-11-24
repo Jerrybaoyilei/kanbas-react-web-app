@@ -44,12 +44,7 @@ function Kanbas() {
             course
         );
         setCourses(
-            courses.map((c) => {
-                if (c._id === course._id) {
-                    return course;
-                }
-                return c;
-            })
+            courses.map((c) => (c._id === course._id ? course : c))
         );
         setCourse({ name: "" });
     };

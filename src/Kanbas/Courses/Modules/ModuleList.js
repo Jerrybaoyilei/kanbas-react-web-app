@@ -8,6 +8,12 @@ import * as client from "./client";
 
 function ModuleList() {
     const { courseId } = useParams();
+    useEffect(() => {
+        client.findModulesForCourse(courseId)
+            .then((modules) =>
+                dispatch(setModules(modules))
+            );
+    }, [courseId]);
     const modules = useSelector((state) => state.modulesReducer.modules);
     const module = useSelector((state) => state.modulesReducer.module);
     const dispatch = useDispatch();
