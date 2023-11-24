@@ -1,42 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database";
 import './ModuleList.css';
 import { useSelector, useDispatch } from "react-redux";
-import { addModule, deleteModule, updateModule, setModule } from "./modulesReducer";
+import { addModule, deleteModule, updateModule, setModule, setModules } from "./modulesReducer";
+import * as client from "./client";
 
 
 function ModuleList() {
     const { courseId } = useParams();
-    // const [modules, setModules] = useState(db.modules);
-    // const [module, setModule] = useState({
-    //     name: "New Module",
-    //     description: "New Module Description",
-    //     course: courseId,
-    // })
-
-    // const addModule = (module) => {
-    //     setModules([...modules, { ...module, _id: new Date().getTime().toString() }])
-    // }
-
-    // const deleteModule = (moduleId) => {
-    //     setModules(modules.filter((module) => module._id !== moduleId))
-    // }
-
-    // const updateModule = () => {
-    //     setModules(
-    //         modules.map((m) => {
-    //             if (m._id === module._id) {
-    //                 return module;
-    //             } else {
-    //                 return m;
-    //             }
-    //         })
-    //     )
-    // }
+    useEffect(() => {
+        client.findModulesForCourse(courseId)
+            .then((modules) =>
+                dispatch(setModules(modules))
+            );
+    }, [courseId]);
     const modules = useSelector((state) => state.modulesReducer.modules);
     const module = useSelector((state) => state.modulesReducer.module);
     const dispatch = useDispatch();
+    const handleDeleteModule = (moduleId) => {
+        client.deleteModule(moduleId).then((status) => {
+            dispatch(deleteModule(moduleId));
+        });
+    };
+    const handleUpdateModule = async () => {
+        const status = await client.updateModule(module);
+        dispatch(updateModule(module));
+    };
+    const handleAddModule = () => {
+        client.createModule(courseId, module).then((module) => {
+            dispatch(addModule(module));
+        });
+    };
+
 
     return (
         <ul className="list-group">
@@ -46,7 +41,7 @@ function ModuleList() {
                     <textarea value={module.description} onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))} className="form-control my-2" />
                     <div>
                         <button onClick={() => dispatch(updateModule(module))} className="btn btn-warning me-2">Update</button>
-                        <button className="btn btn-success my-2" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
+                        <button className="btn btn-success my-2" onClick={handleAddModule}>Add</button>
                     </div>
                 </div>
             </li>
@@ -55,7 +50,7 @@ function ModuleList() {
                     .filter((module) => module.course === courseId)
                     .map((module, index) => (
                         <li key={index} className="list-group-item wd-module-list-item rounded-0 mb-5 border-1">
-                            <button onClick={() => dispatch(deleteModule(module._id))} className="btn btn-danger float-end">
+                            <button onClick={() => handleDeleteModule(module._id)} className="btn btn-danger float-end">
                                 Delete
                             </button>
                             <button onClick={() => dispatch(setModule(module))} className="btn btn-warning float-end me-2">

@@ -12,9 +12,9 @@ function CourseNavigation() {
 
     return (
         <div className="wd-course-navigation">
-            <div className="wd-ellipsis mb-3">
+            {/* <div className="wd-ellipsis mb-3">
                 {course.number} {course.name} {course.startDate}
-            </div>
+            </div> */}
             <div className="list-group">
                 {links.map((link, index) => (
                     <Link

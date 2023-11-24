@@ -30,7 +30,7 @@ function Dashboard(
                 <button onClick={addNewCourse} className="btn btn-success m-2 ms-0">
                     Add
                 </button>
-                <button onClick={updateCourse} className="btn btn-warning">
+                <button onClick={() => updateCourse(course)} className="btn btn-warning">
                     Update
                 </button>
                 <div className="list-group">
@@ -39,7 +39,7 @@ function Dashboard(
                             {course.name}
                             <button onClick={(e) => {
                                 e.preventDefault();
-                                deleteCourse(course._id)
+                                deleteCourse(course)
                             }} className="btn btn-danger float-end">
                                 Delete
                             </button>

@@ -8,3 +8,7 @@
     border-radius: 0 !important;
     border-left: 4px solid green !important;
 }
+
+.wd-input-group-search-assignment {
+    width: auto !important;
+}
