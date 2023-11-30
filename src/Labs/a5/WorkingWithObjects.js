@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
-const base_URL = process.env.REACT_APP_API_BASE.substring(0, URL.length - 3);
+
 
 function WorkingWithObjects() {
+    const BASE_URL = process.env.REACT_APP_API_BASE;
+    const base_url = BASE_URL.substring(0, BASE_URL.length - 3);
     const [assignment, setAssignment] = useState({
         id: 1,
         title: "NodeJS Assignment",
@@ -11,7 +13,7 @@ function WorkingWithObjects() {
         completed: false,
         score: 0,
     });
-    const URL = `${base_URL}/a5/assignment`;
+    const URL = `${base_url}/a5/assignment`;
     const fetchAssignment = async () => {
         const response = await axios.get(`${URL}`);
         setAssignment(response.data);

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
-const URL = process.env.REACT_APP_API_BASE.substring(0, URL.length - 3);
+
 
 function EncodingParametersInURLs() {
+    const BASE_URL = process.env.REACT_APP_API_BASE;
+    const URL = BASE_URL.substring(0, BASE_URL.length - 3);
     const [a, setA] = useState(34);
     const [b, setB] = useState(23);
     const [result, setResult] = useState(0);
