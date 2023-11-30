@@ -5,7 +5,7 @@ import WorkingWithObjects from "./WorkingWithObjects";
 
 function Assignment5() {
     console.log(process.env.REACT_APP_API_BASE);
-    const URL = process.env.REACT_APP_API_BASE.substring(0, process.env.REACT_APP_API_BASE.length - 3);
+    const URL = process.env.REACT_APP_API_BASE.substring(0, process.env.REACT_APP_API_BASE.length - 4);
     return (
         <div>
             <h1>Assignment 5</h1>

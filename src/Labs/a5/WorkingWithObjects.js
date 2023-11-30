@@ -4,7 +4,7 @@ import axios from "axios";
 
 function WorkingWithObjects() {
     const BASE_URL = process.env.REACT_APP_API_BASE;
-    const base_url = BASE_URL.substring(0, BASE_URL.length - 3);
+    const base_url = BASE_URL.substring(0, BASE_URL.length - 4);
     const [assignment, setAssignment] = useState({
         id: 1,
         title: "NodeJS Assignment",

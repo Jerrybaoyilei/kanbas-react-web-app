@@ -4,7 +4,7 @@ import axios from "axios";
 
 function WorkingWithArrays() {
     const BASE_URL = process.env.REACT_APP_API_BASE;
-    const URL = BASE_URL.substring(0, BASE_URL.length - 3);
+    const URL = BASE_URL.substring(0, BASE_URL.length - 4);
     const [errorMessage, setErrorMessage] = useState(null);
     const API = `${URL}/a5/todos`;
     const [todo, setTodo] = useState({
