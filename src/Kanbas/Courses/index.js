@@ -10,10 +10,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import '../../index.css';
 import "./index.css";
-const BASE_URL = process.env.REACT_APP_API_BASE;
+
 
 function Courses() {
     const { courseId } = useParams();
+    const BASE_URL = process.env.REACT_APP_API_BASE;
     const URL = `${BASE_URL}/courses`;
     const [course, setCourse] = useState({});
     const findCourseById = async (courseId) => {
