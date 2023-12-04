@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 function WorkingWithObjects() {
-    const BASE_URL = process.env.REACT_APP_API_BASE;
+    const BASE_URL = process.env.REACT_APP_API_BASE || "http://localhost:4000/api";
     const base_url = BASE_URL.substring(0, BASE_URL.length - 4);
     const [assignment, setAssignment] = useState({
         id: 1,

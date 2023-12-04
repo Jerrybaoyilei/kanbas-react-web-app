@@ -5,7 +5,8 @@ import WorkingWithObjects from "./WorkingWithObjects";
 
 function Assignment5() {
     console.log(process.env.REACT_APP_API_BASE);
-    const URL = process.env.REACT_APP_API_BASE.substring(0, process.env.REACT_APP_API_BASE.length - 4);
+    const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:4000/api";
+    const URL = API_BASE.substring(0, API_BASE.length - 4);
     return (
         <div>
             <h1>Assignment 5</h1>

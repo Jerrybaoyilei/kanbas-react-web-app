@@ -14,7 +14,7 @@ import "./index.css";
 
 function Courses() {
     const { courseId } = useParams();
-    const BASE_URL = process.env.REACT_APP_API_BASE;
+    const BASE_URL = process.env.REACT_APP_API_BASE || "http://localhost:4000/api";
     const URL = `${BASE_URL}/courses`;
     const [course, setCourse] = useState({});
     const findCourseById = async (courseId) => {

@@ -6,11 +6,15 @@ import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import Signin from "./Users/signin"
+import Account from "./Users/account"
+import UserTable from "./Users/table";
+import Signup from "./Users/signup";
 
 
 function Kanbas() {
     const [courses, setCourses] = useState([]);
-    const BASE_URL = process.env.REACT_APP_API_BASE;
+    const BASE_URL = process.env.REACT_APP_API_BASE || "http://localhost:4000/api";
     const URL = `${BASE_URL}/courses`;
     const findAllCourses = async () => {
         const response = await axios.get(URL);
@@ -57,7 +61,8 @@ function Kanbas() {
                 <div className="flex-grow-1">
                     <Routes>
                         <Route path="/" element={<Navigate to="Dashboard" />} />
-                        <Route path="Account" element={<h1>Account</h1>} />
+                        <Route path="Account" element={<Account />} />
+                        <Route path="/account/:id" element={<Account />} />
                         <Route path="Dashboard" element={
                             <Dashboard
                                 courses={courses}
@@ -69,6 +74,9 @@ function Kanbas() {
                             />}
                         />
                         <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
+                        <Route path="/signin" element={<Signin />} />
+                        <Route path="/admin/users" element={<UserTable />} />
+                        <Route path="/signup" element={<Signup />} />
                     </Routes>
                 </div>
             </div>
