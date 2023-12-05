@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 function WorkingWithArrays() {
-    const BASE_URL = process.env.REACT_APP_API_BASE;
+    const BASE_URL = process.env.REACT_APP_API_BASE || "http://localhost:4000/api";
     const URL = BASE_URL.substring(0, BASE_URL.length - 4);
     const [errorMessage, setErrorMessage] = useState(null);
     const API = `${URL}/a5/todos`;

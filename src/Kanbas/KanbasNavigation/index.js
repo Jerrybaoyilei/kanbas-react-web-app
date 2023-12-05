@@ -19,7 +19,7 @@ function KanbasNavigation() {
         "History": <SlClock className="wd-icon" />,
         "Studio": <TbPresentationAnalytics className="wd-icon" />,
         "Commons": <IoArrowForwardCircleOutline className="wd-icon" />,
-        "Help": <AiOutlineQuestionCircle className="wd-icon" />,
+        "Help": <AiOutlineQuestionCircle className="wd-icon" />
     }
 
     const { pathname } = useLocation();
@@ -27,9 +27,11 @@ function KanbasNavigation() {
     return (
         <div className="wd-kanbas-navbar">
             <div className="list-group wd-kanbas-navigation" style={{ width: 150 }}>
+                {/* Clicking on the NEU logo */}
                 <Link key={9} to='/Kanbas/Dashboard' className='list-group-item d-flex flex-column neu-icon'>
                     <img className="img-fluid" src={require("./NU_RGB_Notched-N_motto_RW.png")} alt="NU Logo" />
                 </Link>
+                {/* Kanbas navigation items (i.e., icon + item name) */}
                 {links.map((link, index) => (
                     <Link
                         key={index}
@@ -39,6 +41,14 @@ function KanbasNavigation() {
                         {link}
                     </Link>
                 ))}
+                <Link key={10} to='/Kanbas/signin' className={`list-group-item ${pathname.includes("signin") && "active"} d-flex flex-column`}>
+                    <BiUserCircle className="wd-icon" />
+                    Signin
+                </Link>
+                <Link key={10} to='/Kanbas/signup' className={`list-group-item ${pathname.includes("signin") && "active"} d-flex flex-column`}>
+                    <BiUserCircle className="wd-icon" />
+                    Signup
+                </Link>
             </div>
         </div>
     );
