@@ -45,7 +45,7 @@ function KanbasNavigation() {
                     <BiUserCircle className="wd-icon" />
                     Signin
                 </Link>
-                <Link key={10} to='/Kanbas/signup' className={`list-group-item ${pathname.includes("signin") && "active"} d-flex flex-column`}>
+                <Link key={10} to='/Kanbas/signup' className={`list-group-item ${pathname.includes("signup") && "active"} d-flex flex-column`}>
                     <BiUserCircle className="wd-icon" />
                     Signup
                 </Link>
